@@ -12,7 +12,9 @@ CORS(app)
 sio = socketio.Client()
 
 try:
-    sio.connect("http://localhost:5000", transports=["websocket"])
+    sio.connect(
+        "https://ai-proctoring-system-k2vt.onrender.com", transports=["websocket"]
+    )
     print("✅ Connected to Node.js")
 except:
     print("⚠️ Node.js server not found!")
