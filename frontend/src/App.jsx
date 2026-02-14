@@ -5,7 +5,7 @@ import CameraFeed from "./components/CameraFeed";
 import SeatControls from "./components/SeatControls";
 import SeatGrid from "./components/SeatGrid";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://ai-proctoring-system-k2vt.onrender.com");
 
 function App() {
   const [seats, setSeats] = useState([]);
