@@ -56,7 +56,8 @@ def generate_frames():
 def video_feed():
     gen = generate_frames()
     response = Response(gen, mimetype="multipart/x-mixed-replace; boundary=frame")
-    # Ye headers dalna zaroori hai ngrok ke liye
+
+    # ngrok header
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["X-Frame-Options"] = "ALLOWALL"
     return response

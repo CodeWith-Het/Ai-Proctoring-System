@@ -21,7 +21,7 @@ function App() {
     return () => socket.off("notify_supervisor");
   }, [seats]);
 
-  // --- FUNCTIONS / HANDLERS ---
+  // Fucntions
   const markSeatCheating = (index) => {
     setSeats((prevSeats) => {
       const newSeats = [...prevSeats];

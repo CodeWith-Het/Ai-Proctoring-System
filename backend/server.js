@@ -7,7 +7,7 @@ const path = require("path");
 const app = express();
 app.use(cors());
 
-// Serve frontend build from public folder
+// Serve build 
 app.use(express.static(path.join(__dirname, "public")));
 
 const server = http.createServer(app);
